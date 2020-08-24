@@ -51,7 +51,6 @@ func (p *Pool) Worker(work_ID int) {
 		task.Excecute()
 		fmt.Println("Word--",work_ID,"完成任务")
 	}
-
 }
 
 // 让携程池，真正开始工作，协程池的一个启动方法
