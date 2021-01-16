@@ -19,7 +19,7 @@ import "fmt"
 // 1  3  -1  -3 [5  3  6] 7       6
 // 1  3  -1  -3  5 [3  6  7]      7
 
-// 20 ms	6.3 MB
+// 20-1-1 ms	6.3 MB
 func maxSlidingWindow(nums []int, k int) []int {
 	if len(nums) == 0 {
 		return []int{}
