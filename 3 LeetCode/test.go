@@ -1,21 +1,16 @@
 package main
 
-import (
-	"fmt"
-	"reflect"
-)
+import "fmt"
 
 func main() {
-	var list *[]int
-	mid := make([]int, 10)
-	list = &mid
-	mid[1] = 1
-
-
-
-	//fmt.Println(list[:9])
-	fmt.Println(list)
-	fmt.Println(reflect.TypeOf(list))
-	fmt.Println(reflect.TypeOf((*list)[0:1]))
-	fmt.Println((*list)[1:2])
+	st := "AAXXAA"
+	fmt.Println(len(st))
+	i,j := 0,0
+	//fmt.Println(st[2]-'A')
+	//fmt.Println("=========================================")
+	//for k,v := range st{
+	//	fmt.Println(k)
+	//	fmt.Println(v)
+	//	fmt.Println("-------------------------------------")
+	//}
 }
