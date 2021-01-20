@@ -3,14 +3,18 @@ package main
 import "fmt"
 
 func main() {
-	st := "AAXXAA"
-	fmt.Println(len(st))
-	i,j := 0,0
-	//fmt.Println(st[2]-'A')
-	//fmt.Println("=========================================")
-	//for k,v := range st{
-	//	fmt.Println(k)
-	//	fmt.Println(v)
-	//	fmt.Println("-------------------------------------")
-	//}
+
+	xxx:= "((()))"
+	bbb:= ""
+	for k,V := range xxx{
+		fmt.Println(k)
+		fmt.Println(V)
+	}
+	fmt.Println(xxx[0]=='(')
+	fmt.Println(len(xxx))
+	fmt.Println(xxx[3:4]+bbb)
+	fmt.Println(xxx[0:len(
+		xxx)-1])
+
+
 }
