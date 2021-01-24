@@ -2,19 +2,14 @@ package main
 
 import "fmt"
 
+var TheParent = map[int]int{}
 func main() {
 
-	xxx:= "((()))"
-	bbb:= ""
-	for k,V := range xxx{
-		fmt.Println(k)
-		fmt.Println(V)
-	}
-	fmt.Println(xxx[0]=='(')
-	fmt.Println(len(xxx))
-	fmt.Println(xxx[3:4]+bbb)
-	fmt.Println(xxx[0:len(
-		xxx)-1])
+	fmt.Println(TheParent)
+	TheParent[0] = 1
+	fmt.Println(TheParent[0])
+	fmt.Println(TheParent)
+	fmt.Println(TheParent[9])
 
 
 }
