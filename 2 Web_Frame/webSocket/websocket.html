@@ -1,10 +1,36 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <script type="text/javascript">
+        var socket;
+        var sendmessage = {"mesage":""}
+        if (typeof (WebSocket) == "undefined") {
+            console.log("您的浏览器不支持WebSocket");
+        } else {
+            console.log("您的浏览器支持WebSocket");
+            //实现化WebSocket对象，指定要连接的服务器地址与端口  建立连接
+            socket = new WebSocket("ws://localhost:3001/ping");
+            //打开事件
+            socket.onopen = function () {
+                console.log("Socket 已打开");
+                var data = {"a":"1","b":"2"}
+                console.log(JSON.stringify(data))
+
+                socket.send(JSON.stringify(data));
+            };
+            //获得消息事件
+            socket.onmessage = function (msg) {
+                console.log(msg.data);
+            };
+            //关闭事件
+            socket.onclose = function () {
+                console.log("Socket已关闭");
+            };
+            //发生了错误事件
+            socket.onerror = function () {
+                alert("Socket发生了错误");
+            }
+        }
+    </script>
 </head>
-<body>
-$END$
-</body>
 </html>

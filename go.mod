@@ -1,5 +1,7 @@
 module main
 
+go 1.15
+
 require (
 	cloud.google.com/go v0.66.0 // indirect
 	cloud.google.com/go/storage v1.11.0 // indirect
@@ -14,10 +16,14 @@ require (
 	github.com/iancoleman/strcase v0.1.1 // indirect
 	github.com/ianlancetaylor/demangle v0.0.0-20200824232613-28f6c0f3b639 // indirect
 	github.com/json-iterator/go v1.1.10 // indirect
+	github.com/kirinlabs/HttpRequest v1.1.1 // indirect
+	github.com/micro/go-micro v1.18.0 // indirect
 	github.com/modern-go/concurrent v0.0.0-20180306012644-bacd9c7ef1dd // indirect
 	github.com/modern-go/reflect2 v1.0.1 // indirect
 	github.com/pkg/sftp v1.12.0 // indirect
 	github.com/prometheus/client_model v0.2.0 // indirect
+	github.com/rongcloud/server-sdk-go/v3 v3.1.0 // indirect
+	github.com/rs/cors v1.7.0 // indirect
 	github.com/spf13/afero v1.4.0 // indirect
 	github.com/stretchr/objx v0.3.0 // indirect
 	github.com/ugorji/go v1.1.8 // indirect

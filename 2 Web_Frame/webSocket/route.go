@@ -1,12 +1,11 @@
-package route
+package main
 
 import (
-	"github.com/gin-gonic/gin"
-	"../ws"
-)
+	"github.com/gin-gonic/gin")
 
-func Init()  {
+
+func Init2()  {
 	router := gin.Default()
-	router.GET("/ping",ws.Ping)
+	router.GET("/ping",Ping)
 	router.Run(":3001")
 }

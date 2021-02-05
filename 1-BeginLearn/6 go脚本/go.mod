@@ -1,5 +1,7 @@
 module main
 
+go 1.15
+
 require (
 	cloud.google.com/go v0.66.0 // indirect
 	cloud.google.com/go/storage v1.11.0 // indirect

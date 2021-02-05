@@ -5,6 +5,8 @@ import (
 	"github.com/gin-gonic/gin"
 	"github.com/gorilla/websocket"
 	"net/http"
+	"reflect"
+	"encoding/json"
 )
 
 var upGrader = websocket.Upgrader{
@@ -30,10 +32,25 @@ func Ping(c *gin.Context)  {
 			fmt.Println(err)
 			break
 		}
-
+		fmt.Println("开始从前端读取数据")
 		fmt.Println(mt)
 		fmt.Println(message)
+		fmt.Println(reflect.TypeOf(message))
+
 		fmt.Println(string(message))
+
+		var d map[string]interface{}
+		// 将字符串反解析为字典
+		err = json.Unmarshal(message, &d)
+		if err != nil{
+			fmt.Println("传输失败")
+		}
+		fmt.Println(d)  // map[id:1 name:wxnacy]
+
+
+
+		fmt.Printf("读取结束\n")
+
 		// 如果客户端发送ping就返回pong 否则数据原封不动返回客户端
 		if string(message) == "ping"{
 			message = []byte("pong")
@@ -43,7 +60,8 @@ func Ping(c *gin.Context)  {
 		// 返回json字符串，借助gin的ginH实现
 		// v := gin.H{"message":msg}
 		// err = ws.WriteJSON(v)
-		v := gin.H{"message":message}
+		fmt.Println(message)
+		v := gin.H{"message":message,"数据返回":"数据返回"}
 		err = ws.WriteJSON(v)
 		if err != nil{
 			break
