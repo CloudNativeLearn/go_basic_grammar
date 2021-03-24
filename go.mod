@@ -5,6 +5,7 @@ go 1.15
 require (
 	cloud.google.com/go v0.66.0 // indirect
 	cloud.google.com/go/storage v1.11.0 // indirect
+	github.com/andygrunwald/go-jira v1.13.0 // indirect
 	github.com/census-instrumentation/opencensus-proto v0.3.0 // indirect
 	github.com/cncf/udpa/go v0.0.0-20200909154343-1f710aca26a9 // indirect
 	github.com/envoyproxy/go-control-plane v0.9.6 // indirect
