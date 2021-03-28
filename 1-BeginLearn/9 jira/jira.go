@@ -16,4 +16,6 @@ func main() {
 	fmt.Println(err)
 
 	fmt.Printf("\nEmail: %v\nSuccess!\n", u.EmailAddress)
+
+
 }

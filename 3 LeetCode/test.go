@@ -2,18 +2,14 @@ package main
 
 import "fmt"
 
-var TheParent = map[int]int{}
 func main() {
-EEE("")
-}
-
-func EEE(s string)  {
-	if s =="2" {
-		return
-	}else {
-		for k,v := range "121"{
-			fmt.Println(k,string(v))
-			EEE(string(v))
-		}
-	}
+ list := [][]int{}
+ a := []int{1,2,3}
+ for i:=0;i<10;i++{
+  list = append(list, make([]int,len(a)))
+ }
+ fmt.Println(list)
+ s := "1,2,3"
+ println(s[0])
+ println(s[1])
 }
