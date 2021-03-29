@@ -3,13 +3,13 @@ package main
 import "fmt"
 
 func main() {
- list := [][]int{}
- a := []int{1,2,3}
- for i:=0;i<10;i++{
-  list = append(list, make([]int,len(a)))
- }
- fmt.Println(list)
- s := "1,2,3"
- println(s[0])
- println(s[1])
+x := []int{1,2,3,4}
+b := make([]int,len(x))
+copy(b,x)
+b =  append(b, 1)
+ b =  append(b, 1)
+ b =  append(b, 1)
+ b =  append(b, 1)
+fmt.Println(x)
+fmt.Println(b)
 }

@@ -10,9 +10,7 @@ package main
 //]
 //输出: 12
 //解释: 路径 1→3→5→2→1 可以拿到最多价值的礼物
-func main() {
 
-}
 
 func maxValue(grid [][]int) int {
 	for i := 0; i < len(grid); i++ {
