@@ -1,15 +1,20 @@
 package main
 
-import "fmt"
+import (
+ "fmt"
+ "reflect"
+)
 
 func main() {
-x := []int{1,2,3,4}
-b := make([]int,len(x))
-copy(b,x)
-b =  append(b, 1)
- b =  append(b, 1)
- b =  append(b, 1)
- b =  append(b, 1)
-fmt.Println(x)
-fmt.Println(b)
+ // 47 - 57
+ // - 45
+ // + 43
+ // 空格 32
+ str := " -+01239"
+ for k,i:= range str{
+  fmt.Println(i)
+  fmt.Println(reflect.TypeOf(i))
+  fmt.Println(str[k])
+  //fmt.Println(string(i))
+ }
 }

@@ -23,43 +23,9 @@ import "fmt"
 //来源：力扣（LeetCode）
 //链接：https://leetcode-cn.com/problems/nge-tou-zi-de-dian-shu-lcof
 //著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
-
-func main() {
-	fmt.Println(dicesProbability(3))
-}
 //
-//func dicesProbability(n int) []float64 {
-//	Result := map[int]float64{}
-//	x := map[int]float64{}
-//	if n ==0 {
-//		return []float64{}
-//	}else {
-//		Result[1],Result[2] ,Result[3],Result[4],Result[5],Result[6] = 1.0/6,1.0/6,1.0/6,1.0/6,1.0/6,1.0/6
-//		x = Stark(n-1,&Result)
-//	}
-//	for k,v :=range x{
-//		fmt.Println(k,v)
-//	}
-//return nil
-//}
-//
-//// 递归处理
-//func Stark(n int,Map *map[int]float64) map[int]float64 {
-//	NewMap := map[int]float64{}
-//	if n!=0 {
-//		for i:=1;i<=6;i++{
-//			for k,v := range *Map{
-//				//fmt.Println(k,v)
-//				NewMap[k+i] = NewMap[k+i]+ v*1.0/6
-//			}
-//		}
-//		Map = &NewMap
-//		n = n-1
-//		if n!=0 {
-//			Stark(n,Map)
-//		}
-//	}
-//	return NewMap
+//func main() {
+//	fmt.Println(dicesProbability(3))
 //}
 
 func dicesProbability(n int) []float64 {
