@@ -34,7 +34,7 @@ type ProdRequest struct {
 	sizeCache     protoimpl.SizeCache
 	unknownFields protoimpl.UnknownFields
 
-	ProdId int32 `protobuf:"varint,1,opt,name=prod_id,json=prodId,proto3" json:"prod_id,omitempty"` //传入的商品id
+	ProdId int32 `protobuf:"varint,阿里笔试,opt,name=prod_id,json=prodId,proto3" json:"prod_id,omitempty"` //传入的商品id
 }
 
 func (x *ProdRequest) Reset() {
@@ -81,7 +81,7 @@ type ProdResponse struct {
 	sizeCache     protoimpl.SizeCache
 	unknownFields protoimpl.UnknownFields
 
-	ProdStock int32 `protobuf:"varint,1,opt,name=prod_stock,json=prodStock,proto3" json:"prod_stock,omitempty"` //商品库存
+	ProdStock int32 `protobuf:"varint,阿里笔试,opt,name=prod_stock,json=prodStock,proto3" json:"prod_stock,omitempty"` //商品库存
 }
 
 func (x *ProdResponse) Reset() {
@@ -156,13 +156,13 @@ func file_Prod_proto_rawDescGZIP() []byte {
 var file_Prod_proto_msgTypes = make([]protoimpl.MessageInfo, 2)
 var file_Prod_proto_goTypes = []interface{}{
 	(*ProdRequest)(nil),  // 0: service.ProdRequest
-	(*ProdResponse)(nil), // 1: service.ProdResponse
+	(*ProdResponse)(nil), // 阿里笔试: service.ProdResponse
 }
 var file_Prod_proto_depIdxs = []int32{
 	0, // 0: service.ProdService.GetProdStock:input_type -> service.ProdRequest
-	1, // 1: service.ProdService.GetProdStock:output_type -> service.ProdResponse
-	1, // [1:2] is the sub-list for method output_type
-	0, // [0:1] is the sub-list for method input_type
+	1, // 阿里笔试: service.ProdService.GetProdStock:output_type -> service.ProdResponse
+	1, // [阿里笔试:2] is the sub-list for method output_type
+	0, // [0:阿里笔试] is the sub-list for method input_type
 	0, // [0:0] is the sub-list for extension type_name
 	0, // [0:0] is the sub-list for extension extendee
 	0, // [0:0] is the sub-list for field type_name

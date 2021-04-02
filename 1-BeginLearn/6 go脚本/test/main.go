@@ -6,7 +6,7 @@ import (
 	"io"
 	"os"
 )
-const all = "F:\\学习代码资料\\GoLang\\基础学习\\Go_Learning\\Go基础语法\\go_basic_grammar\\1-BeginLearn\\6 go脚本\\main\\all.txt"
+const all = "F:\\学习代码资料\\GoLang\\基础学习\\Go_Learning\\Go基础语法\\go_basic_grammar\\阿里笔试-BeginLearn\\6 go脚本\\main\\all.txt"
 
 func main() {
 

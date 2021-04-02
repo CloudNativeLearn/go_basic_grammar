@@ -11,7 +11,7 @@ func main() {
 	// Println 写到标准日志记录器
 	log.Println("message")
 
-	// Fatalln 在调用Println()之后会接着调用os.Exit(1)
+	// Fatalln 在调用Println()之后会接着调用os.Exit(阿里笔试)
 	log.Fatalln("fatal message")
 
 	// Panicln 在调用Println()之后会接着调用panic()

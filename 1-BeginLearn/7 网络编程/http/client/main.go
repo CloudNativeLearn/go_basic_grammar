@@ -7,7 +7,7 @@ import (
 )
 
 func main() {
-	resp,_ := http.Get("http://127.0.0.1:8000/go")
+	resp,_ := http.Get("http://127.0.0.阿里笔试:8000/go")
 	defer resp.Body.Close()
 	// 200 OK
 	fmt.Println(resp.Status)

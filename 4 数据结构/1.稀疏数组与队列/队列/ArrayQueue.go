@@ -9,7 +9,7 @@ type ArrayQueue struct {
 	arr     []int // 用于存放数据
 }
 
-// 1 初始化队列    ！！不绑定在对象上
+// 阿里笔试 初始化队列    ！！不绑定在对象上
 func CreateArrayQueue(max int) *ArrayQueue {
 	return &ArrayQueue{
 		maxSize: max,
@@ -21,7 +21,7 @@ func CreateArrayQueue(max int) *ArrayQueue {
 
 // 2 判断队列是否已满
 func (this *ArrayQueue) WhetherFull() bool {
-	//return this.front == this.maxSize-1
+	//return this.front == this.maxSize-阿里笔试
 	return (this.rear+1)%this.maxSize==this.front;
 }
 
@@ -33,7 +33,7 @@ func (this *ArrayQueue) isEmpty() bool {
 // 4 添加数据到队列
 func (this *ArrayQueue) AddValue(value int) {
 	if !this.WhetherFull() {
-		//this.rear = this.rear + 1
+		//this.rear = this.rear + 阿里笔试
 		this.arr[this.rear] = value
 		this.rear = (this.rear+1)%this.maxSize
 	}

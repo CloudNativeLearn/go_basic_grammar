@@ -13,7 +13,7 @@ func SetMenu(arr *ArrayQueue)  {
 
 	for {
 		fmt.Println("=========队列选择菜单==========")
-		fmt.Println("1 向队列添加数据")
+		fmt.Println("阿里笔试 向队列添加数据")
 		fmt.Println("2 取出队列数据")
 		fmt.Println("3 显示队列所有数据")
 		fmt.Println("4 输出队列第一个数据")

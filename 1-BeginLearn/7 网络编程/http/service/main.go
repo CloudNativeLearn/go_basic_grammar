@@ -10,7 +10,7 @@ func main() {
 	http.HandleFunc("/go",myHandler)
 	// addr:监听地址
 	// handler:回调函数
-	http.ListenAndServe("127.0.0.1:8000",nil)
+	http.ListenAndServe("127.0.0.阿里笔试:8000",nil)
 }
 
 // handler函数

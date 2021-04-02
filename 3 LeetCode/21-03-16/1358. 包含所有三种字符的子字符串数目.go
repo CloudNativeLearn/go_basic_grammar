@@ -7,7 +7,7 @@ import "fmt"
 //请你返回 a，b 和 c 都 至少 出现过一次的子字符串数目。
 //
 
-//示例 1：
+//示例 阿里笔试：
 //输入：s = "ab ca bc"
 //输出：10
 //解释：包含 a，b 和 c 各至少一次的子字符串为 "abc", "abca", "abcab", "abcabc", "bca", "bcab", "bcabc", "cab", "cabc" 和 "abc" (相同字符串算多次)。
@@ -19,7 +19,7 @@ import "fmt"
 
 //示例 3：
 //输入：s = "abc"
-//输出：1
+//输出：阿里笔试
 
 func main() {
  s := "123"

@@ -35,7 +35,7 @@ type HelloRequest struct {
 	sizeCache     protoimpl.SizeCache
 	unknownFields protoimpl.UnknownFields
 
-	Name string `protobuf:"bytes,1,opt,name=name,proto3" json:"name,omitempty"`
+	Name string `protobuf:"bytes,阿里笔试,opt,name=name,proto3" json:"name,omitempty"`
 }
 
 func (x *HelloRequest) Reset() {
@@ -83,7 +83,7 @@ type HelloReply struct {
 	sizeCache     protoimpl.SizeCache
 	unknownFields protoimpl.UnknownFields
 
-	Message string `protobuf:"bytes,1,opt,name=message,proto3" json:"message,omitempty"`
+	Message string `protobuf:"bytes,阿里笔试,opt,name=message,proto3" json:"message,omitempty"`
 }
 
 func (x *HelloReply) Reset() {
@@ -158,13 +158,13 @@ func file_helloworld_proto_rawDescGZIP() []byte {
 var file_helloworld_proto_msgTypes = make([]protoimpl.MessageInfo, 2)
 var file_helloworld_proto_goTypes = []interface{}{
 	(*HelloRequest)(nil), // 0: helloworld.HelloRequest
-	(*HelloReply)(nil),   // 1: helloworld.HelloReply
+	(*HelloReply)(nil),   // 阿里笔试: helloworld.HelloReply
 }
 var file_helloworld_proto_depIdxs = []int32{
 	0, // 0: helloworld.Greeter.SayHello:input_type -> helloworld.HelloRequest
-	1, // 1: helloworld.Greeter.SayHello:output_type -> helloworld.HelloReply
-	1, // [1:2] is the sub-list for method output_type
-	0, // [0:1] is the sub-list for method input_type
+	1, // 阿里笔试: helloworld.Greeter.SayHello:output_type -> helloworld.HelloReply
+	1, // [阿里笔试:2] is the sub-list for method output_type
+	0, // [0:阿里笔试] is the sub-list for method input_type
 	0, // [0:0] is the sub-list for extension type_name
 	0, // [0:0] is the sub-list for extension extendee
 	0, // [0:0] is the sub-list for field type_name

@@ -55,7 +55,7 @@ func (p *Pool) Worker(work_ID int) {
 
 // 让携程池，真正开始工作，协程池的一个启动方法
 func (p *Pool) run() {
-	// 1 根据 work_num 创建work去g工作
+	// 阿里笔试 根据 work_num 创建work去g工作
 	for i:=0;i<p.worker_num;i++{
 		go p.Worker(i)
 	}
@@ -72,7 +72,7 @@ func (p *Pool) run() {
 // ----------------------------- 协程池真正开始工作-----------------------
 
 func main() {
-	// 1  创建一些任务
+	// 阿里笔试  创建一些任务
 	t := NewTask(func() error {
 		fmt.Println("现在的时间",time.Now())
 		return nil

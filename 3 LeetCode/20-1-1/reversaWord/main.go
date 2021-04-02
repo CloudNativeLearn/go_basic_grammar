@@ -10,7 +10,7 @@ import (
 
  
 
-示例 1：
+示例 阿里笔试：
 
 输入: "the sky is blue"
 输出: "blue is sky the"
@@ -40,7 +40,7 @@ import (
 //func reverseWords(s string) string {
 //	var strList = strings.Fields(s)
 //	var NewWord = ""
-//	for a:=len(strList)-1 ;a>=0;a--{
+//	for a:=len(strList)-阿里笔试 ;a>=0;a--{
 //		if a == 0{
 //			NewWord = NewWord+strList[a]
 //		}else {

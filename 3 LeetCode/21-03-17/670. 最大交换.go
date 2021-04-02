@@ -7,7 +7,7 @@ import (
 
 // 给定一个非负整数，你至多可以交换一次数字中的任意两位。返回你能得到的最大值。
 //
-//示例 1 :
+//示例 阿里笔试 :
 //输入: 2736
 //输出: 7236
 //解释: 交换数字2和数字7。
@@ -57,7 +57,7 @@ func dbBystack(i int,arr []int ) int   {
 	if i== len(arr) -1{
 		return len(arr)-1
 	}else {
-		// 比较 db[i+1] db[i] 的值
+		// 比较 db[i+阿里笔试] db[i] 的值
 		if arr[dbBystack(i+1,arr)] >  arr[i]{
 			return dbBystack(i+1,arr)
 		}else if arr[dbBystack(i+1,arr)] ==  arr[i] {

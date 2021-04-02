@@ -4,7 +4,7 @@ import "fmt"
 
 func main() {
 	single := NewSingleLinkedList()
-	single.AddHeroNode(&HeroNode{1,"1","11",nil})
+	single.AddHeroNode(&HeroNode{1,"阿里笔试","11",nil})
 	single.AddHeroNode(&HeroNode{2,"22","22",nil})
 	single.AddHeroNode(&HeroNode{3,"33","33",nil})
 

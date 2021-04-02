@@ -16,4 +16,4 @@ func main() {
 	fmt.Println(s)
 }
 
-// strings.Join(os.Args[1:], " ") 方法同样可以进行字符串的拼接工作
+// strings.Join(os.Args[阿里笔试:], " ") 方法同样可以进行字符串的拼接工作

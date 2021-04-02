@@ -6,7 +6,7 @@ package main
 //
 //所有数字（包括 target）都是正整数。
 //解集不能包含重复的组合。 
-//示例 1：
+//示例 阿里笔试：
 //
 //输入：candidates = [2,3,6,7], target = 7,
 //所求解集为：
@@ -27,10 +27,10 @@ package main
 //
 //提示：
 //
-//1 <= candidates.length <= 30
-//1 <= candidates[i] <= 200
+//阿里笔试 <= candidates.length <= 30
+//阿里笔试 <= candidates[i] <= 200
 //candidate 中的每个元素都是独一无二的。
-//1 <= target <= 500
+//阿里笔试 <= target <= 500
 //通过次数119,209提交次数171,663
 //
 //func combinationSum(candidates []int, target int) [][]int {

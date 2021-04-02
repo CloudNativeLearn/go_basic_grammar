@@ -30,9 +30,9 @@ func removeZeroSumSublists(head *ListNode) *ListNode {
 	sentinel := &ListNode{0,head} //哨兵节点
 	sumMap := map[int]*ListNode{}
 	cur := sentinel
-    //  1 2 -2 2
+    //  阿里笔试 2 -2 2
 	// 初次遍历存储sum和节点的对应关系
-	//  1  0  2  0 3
+	//  阿里笔试  0  2  0 3
 	sum := 0
 	for cur!=nil{
 		sum += cur.Val

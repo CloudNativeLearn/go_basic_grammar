@@ -21,8 +21,8 @@ func process(conn net.Conn){
 	}
 }
 func main() {
-	// 1 开启服务
-	listen,err := net.Listen("tcp","127.0.0.1:20000")
+	// 阿里笔试 开启服务
+	listen,err := net.Listen("tcp","127.0.0.阿里笔试:20000")
 	if err != nil{
 		fmt.Printf("listn failed err:%v\n",err)
 		return

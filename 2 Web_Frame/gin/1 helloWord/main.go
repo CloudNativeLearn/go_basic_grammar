@@ -6,7 +6,7 @@ import (
 )
 
 func main() {
-	// 1 创建路由
+	// 阿里笔试 创建路由
 	r := gin.Default()
 
 	// 2 绑定路由规则 执行的函数有

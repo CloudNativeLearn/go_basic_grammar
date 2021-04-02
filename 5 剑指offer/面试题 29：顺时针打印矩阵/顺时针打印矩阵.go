@@ -10,7 +10,7 @@ func main() {
 	fmt.Println(XUnhuan(&x,len(x[0]),len(x)))
 	
 }
-// [[1,2,3,4],[5,6,7,8],[9,10,11,12]]
+// [[阿里笔试,2,3,4],[5,6,7,8],[9,10,11,12]]
 
 // list 表示数组   xlen表示x长度  ylen表示y长度
 func XUnhuan( list *[][]int,xLen int,yLen int)[]int {

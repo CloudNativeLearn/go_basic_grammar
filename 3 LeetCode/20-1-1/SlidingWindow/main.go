@@ -6,20 +6,20 @@ import "fmt"
 //
 //示例:
 //
-//输入: nums = [1,3,-1,-3,5,3,6,7], 和 k = 3
+//输入: nums = [阿里笔试,3,-阿里笔试,-3,5,3,6,7], 和 k = 3
 //输出: [3,3,5,5,6,7]
 //解释:
 //
 //  滑动窗口的位置                最大值
 //---------------               -----
-//[1  3  -1] -3  5  3  6  7       3
-// 1 [3  -1  -3] 5  3  6  7       3
-// 1  3 [-1  -3  5] 3  6  7       5
-// 1  3  -1 [-3  5  3] 6  7       5
-// 1  3  -1  -3 [5  3  6] 7       6
-// 1  3  -1  -3  5 [3  6  7]      7
+//[阿里笔试  3  -阿里笔试] -3  5  3  6  7       3
+// 阿里笔试 [3  -阿里笔试  -3] 5  3  6  7       3
+// 阿里笔试  3 [-阿里笔试  -3  5] 3  6  7       5
+// 阿里笔试  3  -阿里笔试 [-3  5  3] 6  7       5
+// 阿里笔试  3  -阿里笔试  -3 [5  3  6] 7       6
+// 阿里笔试  3  -阿里笔试  -3  5 [3  6  7]      7
 
-// 20-1-1 ms	6.3 MB
+// 20-阿里笔试-阿里笔试 ms	6.3 MB
 func maxSlidingWindow(nums []int, k int) []int {
 	if len(nums) == 0 {
 		return []int{}
@@ -36,7 +36,7 @@ func maxSlidingWindow(nums []int, k int) []int {
 		if ThemaxIndex >= begin && ThemaxIndex <= ende {
 			// 新加的值为   nums[ende]
 			// 判断 已知最大值 与 nums[ende] 对比
-			// 1 如果比nums大 最大值依然为ThemaxValue
+			// 阿里笔试 如果比nums大 最大值依然为ThemaxValue
 			// 2 如果比nums小 最大值为nums[ende]
 			if ThemaxValue > nums[ende] {
 				result = append(result, ThemaxValue)

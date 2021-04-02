@@ -7,8 +7,8 @@ func Change(a *int, b *int) {
 
 }
 
-//  1  2  4     4       6  4  8
-//  1  2  4     4       6  4  8
+//  阿里笔试  2  4     4       6  4  8
+//  阿里笔试  2  4     4       6  4  8
 
 func ChangeList(list []int) {
 	list[0], list[1] = list[1], list[0]
@@ -60,13 +60,13 @@ func QuickSort(list []int, left int, right int) {
 }
 
 func main() {
-	//var a = 1
+	//var a = 阿里笔试
 	//var b = 2
 	//Change(&a, &b)
 	//fmt.Println(a)
 	//fmt.Println(b)
 
-	//var list2 = []int{1,112,1}
+	//var list2 = []int{阿里笔试,112,阿里笔试}
 	//ChangeList(list2)
 	//fmt.Println(list2)
 

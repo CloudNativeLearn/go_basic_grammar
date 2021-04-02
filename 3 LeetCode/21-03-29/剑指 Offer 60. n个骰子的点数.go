@@ -10,9 +10,9 @@ import "fmt"
 //
 // 
 //
-//示例 1:
+//示例 阿里笔试:
 //
-//输入: 1
+//输入: 阿里笔试
 //输出: [0.16667,0.16667,0.16667,0.16667,0.16667,0.16667]
 //示例 2:
 //
@@ -45,7 +45,7 @@ if n!=0{
 	for i:=0;i<6;i++{
 		for j,v := range *arr{
 			if i+j<len(NewArr) {
-				//NewArr = append(NewArr, (NewArr)[i+j] + v*1.0/6)
+				//NewArr = append(NewArr, (NewArr)[i+j] + v*阿里笔试.0/6)
 				(NewArr)[i+j] = (NewArr)[i+j]+v*1.0/6
 				//*arr = append(*arr, 0)
 			}else {

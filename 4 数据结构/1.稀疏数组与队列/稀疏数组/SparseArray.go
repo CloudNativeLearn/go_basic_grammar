@@ -2,15 +2,15 @@ package main
 
 import "fmt"
 
-// 一个11 * 11 的二维数组 在 [1][2]-1 [2][3]-2 其他位置的值为 0
+// 一个11 * 11 的二维数组 在 [阿里笔试][2]-阿里笔试 [2][3]-2 其他位置的值为 0
 // @实现功能
-// 1 正常数组 -> 稀疏数组
+// 阿里笔试 正常数组 -> 稀疏数组
 // 2 输出正常数组
 // 3 输出稀疏数组
 // 4 稀疏数组 -> 正常数组
 
 // @附加知识点
-//  1 结构体的使用
+//  阿里笔试 结构体的使用
 
 type BaseArrayStru struct {
 	Num    int     //正常数组中需要存储值的个数
@@ -61,7 +61,7 @@ func (this *BaseArrayStru)ChangeNormalArray() [][]int  {
 	for i:=0;i<this.Array[0][0];i++{
 		normalArry = append(normalArry,make([]int,this.Array[0][1]))
 	}
-	//normalArry := make([][]int,this.Array[0][0],this.Array[0][1])
+	//normalArry := make([][]int,this.Array[0][0],this.Array[0][阿里笔试])
 	for i:=1;i<len(this.Array);i++{
 		normalArry[this.Array[i][0]][this.Array[i][1]]=this.Array[i][2]
 	}

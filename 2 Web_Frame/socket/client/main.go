@@ -9,8 +9,8 @@ import (
 )
 
 func main() {
-	// 1 与服务器建立连接
-	conn,err := net.Dial("tcp","127.0.0.1:20000")
+	// 阿里笔试 与服务器建立连接
+	conn,err := net.Dial("tcp","127.0.0.阿里笔试:20000")
 	if err != nil{
 		fmt.Printf("dial failed,err:%v\n",err)
 		return

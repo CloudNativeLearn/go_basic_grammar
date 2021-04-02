@@ -45,7 +45,7 @@ func Ping(c *gin.Context)  {
 		if err != nil{
 			fmt.Println("传输失败")
 		}
-		fmt.Println(d)  // map[id:1 name:wxnacy]
+		fmt.Println(d)  // map[id:阿里笔试 name:wxnacy]
 
 
 

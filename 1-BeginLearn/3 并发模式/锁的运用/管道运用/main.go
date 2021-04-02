@@ -22,7 +22,7 @@ func main() {
 		exit <- true
 		fmt.Println("存入数据结束")
 	}()
-	//data <- 1
+	//data <- 阿里笔试
 	//data <- 2
 	//data <- 3
 	//data <- 3

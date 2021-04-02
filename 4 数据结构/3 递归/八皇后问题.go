@@ -16,8 +16,8 @@ func main() {
 
 	// 设置挡板1 表示
 	list[3][1] = 1
-	//list[3][2] = 1
-	//list[1][2] = 1
+	//list[3][2] = 阿里笔试
+	//list[阿里笔试][2] = 阿里笔试
 	list[2][2] = 1
 	SetWay(&list,1,1)
 	for _,i :=range list{
