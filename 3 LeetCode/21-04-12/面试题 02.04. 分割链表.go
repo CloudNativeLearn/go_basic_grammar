@@ -19,36 +19,37 @@ package main
  * }
  */
 
-func main() {
-	// 3->5->8->5->10->2->1
-	root := &ListNode{
-		Val: 3,
-		Next:&ListNode{
-			Val: 5,
-			Next: &ListNode{
-				Val: 8,
-				Next:&ListNode{
-					Val: 5,
-					Next: &ListNode{
-						Val: 10,
-						Next: &ListNode{
-							Val: 2,
-							Next: &ListNode{
-								Val: 1,
-							},
-						},
-					},
-				},
-			},
-		},
-	}
+//func main() {
+//	// 3->5->8->5->10->2->1
+//	root := &ListNode{
+//		Val: 3,
+//		Next:&ListNode{
+//			Val: 5,
+//			Next: &ListNode{
+//				Val: 8,
+//				Next:&ListNode{
+//					Val: 5,
+//					Next: &ListNode{
+//						Val: 10,
+//						Next: &ListNode{
+//							Val: 2,
+//							Next: &ListNode{
+//								Val: 1,
+//							},
+//						},
+//					},
+//				},
+//			},
+//		},
+//	}
+//
+//	partition(root,3)
+//}
 
-	partition(root,3)
-}
-type ListNode struct {
-	Val  int
-	Next *ListNode
-}
+//type ListNode struct {
+//	Val  int
+//	Next *ListNode
+//}
 
 //3->5->8->5->10->2->1
 func partition(head *ListNode, x int) *ListNode {

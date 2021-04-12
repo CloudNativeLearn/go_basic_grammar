@@ -3,25 +3,10 @@ package main
 import "fmt"
 
 func main() {
-	a := &test{
-		next: &test{
-			next: &test{
-				next: nil,
-				id: 2,
-			},
-			id: 1,
-		},
-		id: 0,
-	}
-	for a!=nil{
 
-
-		fmt.Printf("student=%+v\n", a)
-		a = a.next
-
-
-	}
-
+a :=12
+fmt.Println(a/10)
+fmt.Println(a%10)
 
 }
 
