@@ -53,5 +53,6 @@ func QuickSortStark(l int,r int,arr []int)  {
 	}
 	if Theright>r {
 		QuickSortStark(l,Theright,arr)
+		fmt.Println()
 	}
 }
