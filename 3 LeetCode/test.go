@@ -1,15 +1,8 @@
 package main
 
-function test (){
-var num = []
-var i
+import "fmt"
 
-for (i = 0; i < 10; i++) {
-num[i] = function (i) {
-console.log(i)
-}(i)
+func main() {
+	a := []int{1,2}
+	fmt.Println(a[1:])
 }
-return num[0]
-}
-
-test
