@@ -64,7 +64,7 @@ func WhetherHaveOne(root *TreeNode)bool  {
 	left := false
 	right:= false
 	if root.Right!=nil {
-		right=WhetherHaveOne(root.Right)
+		right= WhetherHaveOne(root.Right)
 		if !right {
 			root.Right=nil
 		}

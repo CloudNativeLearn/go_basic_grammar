@@ -71,13 +71,13 @@ func partition(head *ListNode, x int) *ListNode {
 	}
 	Xiao_in.Next = nil
 	Da_in.Next = nil
-	result:=AddTwo(xiao.Next.Next,Da.Next.Next)
+	result:= AddTwo(xiao.Next.Next,Da.Next.Next)
 	return result
 }
 
 
 // 合并两个链表
-func AddTwo(One *ListNode,Two *ListNode) *ListNode{
+func AddTwo(One *ListNode,Two *ListNode) *ListNode {
 	if One==nil{
 		return Two
 	}
