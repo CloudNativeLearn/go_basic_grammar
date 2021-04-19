@@ -3,6 +3,6 @@ package main
 import "fmt"
 
 func main() {
-	a := map[string][]string{}
-	fmt.Println(a[""])
+	a := "123"
+	fmt.Println(a[2]=='3')
 }
