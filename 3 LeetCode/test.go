@@ -3,8 +3,12 @@ package main
 import "fmt"
 
 func main() {
-	a := "ab"
-	fmt.Println(a[0])
-	fmt.Println(a[1])
+	ThMap := map[int]int{}
+	ThMap[0] = 1
+	ThMap[1] = 1
+	for _,v := range ThMap{
+		fmt.Println(v)
+		ThMap[1] =2
+	}
 
 }
