@@ -1,14 +1,17 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"reflect"
+)
 
 func main() {
-	ThMap := map[int]int{}
-	ThMap[0] = 1
-	ThMap[1] = 1
-	for _,v := range ThMap{
+	a := []int{1, 2, 3}
+	fmt.Println(a[0 : len(a)-1])
+	b := " */"
+	for _, v := range b {
 		fmt.Println(v)
-		ThMap[1] =2
+		fmt.Println(reflect.TypeOf(v))
 	}
 
 }
