@@ -2,16 +2,21 @@ package main
 
 import (
 	"fmt"
-	"reflect"
+	"strconv"
 )
-
+//"52","3","v","71","J","A","0","v",       4    4
+//"51","E","k","H","96","21","W","59",     4    4
+// "I","V","s","59","w","X","33","29",     3    5
+// "H","32","51","f","i","58","56","66",   5    3
+//"90","F","10","93","53","85","28","78",  7    1
+//"d","67","81","T","K"                    2     3
 func main() {
-	a := []int{1, 2, 3}
-	fmt.Println(a[0 : len(a)-1])
-	b := " */"
-	for _, v := range b {
-		fmt.Println(v)
-		fmt.Println(reflect.TypeOf(v))
+	a := []string{"1","b"}
+	for _,v := range a{
+		_,error := strconv.Atoi(v)
+		if error != nil{
+			fmt.Println("字符串转换成整数失败")
+		}
 	}
 
 }
