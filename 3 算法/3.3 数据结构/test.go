@@ -1,13 +1,16 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"reflect"
+)
 
 func main() {
 
-a :=12
-fmt.Println(a/10)
-fmt.Println(a%10)
-
+b := "ab"
+fmt.Println(string(b[0])=="a")
+fmt.Println(b[1])
+fmt.Println(reflect.TypeOf(b[0]))
 }
 
 type test struct {
