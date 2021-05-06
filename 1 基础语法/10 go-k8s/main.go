@@ -13,7 +13,7 @@ import (
 var clientset *kubernetes.Clientset
 
 func main()  {
-	k8sconfig := flag.String("k8sconfig","C:\\Users\\fangyulong\\go\\go_basic_grammar\\1-BeginLearn\\10 go-k8s\\k8s.config","kubernetes config file path")
+	k8sconfig := flag.String("k8sconfig","C:\\Users\\fangyulong\\go\\go_basic_grammar\\1 基础语法\\10 go-k8s\\k8s.config","kubernetes config file path")
 	flag.Parse()
 	config , err := clientcmd.BuildConfigFromFlags("",*k8sconfig)
 	if err != nil {

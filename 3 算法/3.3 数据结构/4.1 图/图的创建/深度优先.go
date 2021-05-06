@@ -40,7 +40,7 @@ func dfs(isVisited []bool,i int)  {
 func UseDfs()  {
 	isVisited = make([]bool,len(vertextList))
 	// 遍历所有的节点，进行dfs回溯
-	for i:=0;i<getNumberOfVertex();i++ {
+	for i:=0;i< getNumberOfVertex();i++ {
 		if !isVisited[i]{
 			dfs(isVisited,i)
 		}
