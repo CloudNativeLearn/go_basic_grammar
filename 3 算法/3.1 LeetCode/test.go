@@ -2,7 +2,9 @@ package main
 
 import (
 	"fmt"
+	"reflect"
 )
+
 //"52","3","v","71","J","A","0","v",       4    4
 //"51","E","k","H","96","21","W","59",     4    4
 // "I","V","s","59","w","X","33","29",     3    5
@@ -11,5 +13,6 @@ import (
 //"d","67","81","T","K"                    2     3
 func main() {
 	fmt.Println(int(^uint(0) >> 1))
-
+	s := "01"
+	fmt.Println(reflect.TypeOf(s[0]))
 }
