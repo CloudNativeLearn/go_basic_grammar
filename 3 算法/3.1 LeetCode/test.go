@@ -2,7 +2,6 @@ package main
 
 import (
 	"fmt"
-	"strconv"
 )
 //"52","3","v","71","J","A","0","v",       4    4
 //"51","E","k","H","96","21","W","59",     4    4
@@ -11,12 +10,6 @@ import (
 //"90","F","10","93","53","85","28","78",  7    1
 //"d","67","81","T","K"                    2     3
 func main() {
-	a := []string{"1","b"}
-	for _,v := range a{
-		_,error := strconv.Atoi(v)
-		if error != nil{
-			fmt.Println("字符串转换成整数失败")
-		}
-	}
+	fmt.Println(int(^uint(0) >> 1))
 
 }
