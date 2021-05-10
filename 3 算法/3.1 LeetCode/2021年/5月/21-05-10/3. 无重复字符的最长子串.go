@@ -50,21 +50,20 @@ func lengthOfLongestSubstring(s string) int {
 	//TheMap[s[0]] = 1
 	for {
 		whether := WhetherRight(&TheMap)
-		if whether && j<len(s){
+		if whether && j < len(s) {
 			Result = GetMax(Result, j-i)
 			TheMap[s[j]] = TheMap[s[j]] + 1
-			j = j+1
-		}else if i==len(s) && j==len(s){
+			j = j + 1
+		} else if i == len(s) && j == len(s) {
 			return Result
-		}else if whether && j>=len(s){
+		} else if whether && j >= len(s) {
 			Result = GetMax(Result, j-i)
 			TheMap[s[i]] = TheMap[s[i]] - 1
-			i = i+1
-		}else{
+			i = i + 1
+		} else {
 			TheMap[s[i]] = TheMap[s[i]] - 1
-			i = i+1
+			i = i + 1
 		}
-
 
 	}
 
