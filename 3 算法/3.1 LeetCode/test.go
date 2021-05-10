@@ -12,7 +12,6 @@ import (
 //"90","F","10","93","53","85","28","78",  7    1
 //"d","67","81","T","K"                    2     3
 func main() {
-	fmt.Println(int(^uint(0) >> 1))
-	s := "01"
+	s := "111"
 	fmt.Println(reflect.TypeOf(s[0]))
 }

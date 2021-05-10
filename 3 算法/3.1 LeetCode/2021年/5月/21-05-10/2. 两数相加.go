@@ -101,7 +101,6 @@ func addTwoNumbers(l1 *ListNode, l2 *ListNode) *ListNode {
 				}
 				TheEnd = TheEnd.Next
 			}
-
 			l2 = l2.Next
 		} else if l2 == nil {
 			val = l1.Val + jinwei
