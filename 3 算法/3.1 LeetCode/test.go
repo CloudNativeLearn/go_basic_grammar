@@ -2,7 +2,6 @@ package main
 
 import (
 	"fmt"
-	"sort"
 )
 
 //"52","3","v","71","J","A","0","v",       4    4
@@ -12,8 +11,6 @@ import (
 //"90","F","10","93","53","85","28","78",  7    1
 //"d","67","81","T","K"                    2     3
 func main() {
-	a := "avc"
-	arr := []byte(a)
-	fmt.Println(arr)
-	sort.Sort(arr)
+	list := []int{1,2,3}
+	fmt.Println(list[1:])
 }
